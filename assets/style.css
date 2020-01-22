@@ -1,0 +1,48 @@
+body {
+  --mainColor: #00abff;
+  --mainBackgroundColor: #f2f0f0;
+  --mainForegroundColor: #1b2733;
+  --submenuColor: #ffffff;
+  --inputColor: #ffffff;
+  --inputPlaceholderColor: #1b2733;
+  --menuAndHeaderBackgroundColor: #ffffff;
+  --menuForegroundColor: #1b2733;
+  --menuBackgroundColor: #ffffff;
+  --whiteColor: #ffffff;
+  --mainHoverColor: #0481bf;
+  /*font-family: "Open Sans",sans-serif;*/
+}
+
+#search-video{
+  background: var(--mainBackgroundColor) !important;
+}
+
+.dropdown-menu{
+  background-color: var(--menuBackgroundColor);
+  color: var(--menuForegroundColor);
+}
+
+.dropdown-menu a{
+  color: var(--menuForegroundColor) !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor);
+}
+#custom-css .header{
+  background-color: var(--menuBackgroundColor);
+}
+
+#custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor) !important;
+}
+
+.root .form-group-checkbox input:checked + span{
+  background: var(--mainColor) !important;
+}
+
+.peertube-select-container, input, textarea{
+  border: 1px solid var(--mainBackgroundColor) !important;
+}

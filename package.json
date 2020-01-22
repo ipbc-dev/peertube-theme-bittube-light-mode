@@ -1,0 +1,21 @@
+{
+  "name": "peertube-theme-bittube-light-mode",
+  "version": "0.0.2",
+  "description": "BitTube light theme",
+  "engine": {
+    "peertube": ">=1.3.0"
+  },
+  "keywords": [
+    "peertube",
+    "theme"
+  ],
+  "homepage": "https://github.com/ipbc-dev/peertube-theme-bittube-light-mode",
+  "author": "BitTube",
+  "bugs": "https://github.com/ipbc-dev/peertube-theme-bittube-light-mode/issues",
+  "staticDirs": {},
+  "css": [
+    "assets/style.css"
+  ],
+  "clientScripts": [],
+  "translations": {}
+}
