@@ -10,43 +10,91 @@ body {
   --menuBackgroundColor: #ffffff;
   --whiteColor: #ffffff;
   --mainHoverColor: #0481bf;
+  --dangerBackgroundColor: #d9534f;
   /*font-family: "Open Sans",sans-serif;*/
 }
 
-#search-video{
+#custom-css #search-video{
   background: var(--mainBackgroundColor) !important;
 }
 
-.dropdown-menu{
+/* Top blue header */
+.topHeaderBlue {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  z-index: 2;
+  background-color: #00ABFF;
+  z-index: 100;
+  left: 0px;
+}
+.messageTopHeader {
+  position: absolute;
+  float: left;
+  left: 27px;
+  top: 6px;
+  color: #ffffff;
+}
+.messageTopHeader a {
+  color: #ffffff8f;
+}
+
+/* Dropdowns */
+#custom-css .dropdown-menu{
   background-color: var(--menuBackgroundColor);
   color: var(--menuForegroundColor);
 }
-
-.dropdown-menu a{
+#custom-css .dropdown-menu a{
   color: var(--menuForegroundColor) !important;
 }
-
-.dropdown-item:focus, .dropdown-item:hover{
+#custom-css .dropdown-item:focus:not(.new-playlist-block), 
+#custom-css .dropdown-item:hover:not(.new-playlist-block),
+#custom-css .videos-header a button{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor);
+}
+#custom-css .dropdown-item:focus:not(.new-playlist-block),
+#custom-css .dropdown-item:hover:not(.new-playlist-block),
+#custom-css .dropdown-item:active:not(.new-playlist-block),
+#custom-css span.dropdown-item.custom-action:hover,
+#custom-css a.dropdown-item.with-icon:hover{
+  color: var(--whiteColor) !important; 
+  background-color: var(--mainColor) !important;
 }
 #custom-css .header{
   background-color: var(--menuBackgroundColor);
 }
-
 #custom-css .upload-button, #custom-css .upload-button:active, #custom-css .upload-button:focus{
   color: var(--whiteColor) !important; 
   background-color: var(--mainColor) !important;
 }
 
-.root .form-group-checkbox input:checked + span{
+#custom-css .root .form-group-checkbox input:checked + span{
   background: var(--mainColor) !important;
 }
 
-.peertube-select-container, input, textarea{
+#custom-css .dropdown-menu .dropdown-item:hover span[role="checkbox"],
+#custom-css .dropdown-menu .dropdown-item span[role="checkbox"]:checked{
+  border: 1px solid var(--mainBackgroundColor) !important
+}
+#custom-css .peertube-select-container, input[type="text"], textarea{
   border: 1px solid var(--mainBackgroundColor) !important;
 }
-/* Icons hovers */
+#custom-css .dropdown-menu input[type="submit"]{
+  border: 1px solid transparent !important; /* Removing black border in buttons */
+}
+#custom-css .header .options-row{
+  padding-left: 0;
+}
+#custom-css .header .options-row > div{
+  justify-content: space-between;
+}
+#custom-css .sub-header-container my-menu .menu-wrapper{
+  height: calc(100vh - 55px);
+  top: 52px;
+} 
+/* Icons && Icon hovers */
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
 #custom-css  a my-global-icon svg g[stroke="#000000"],
 #custom-css  a my-global-icon svg path[stroke="#000000"],
@@ -60,7 +108,8 @@ body {
 #custom-css .dropdown-item:hover my-global-icon svg path[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg polygon[stroke="#000000"],
 #custom-css .dropdown-item:hover my-global-icon svg rect[stroke="#000000"],
-#custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"]{
+#custom-css .dropdown-item:hover my-global-icon svg ellipse[stroke="#000000"],
+#custom-css .videos-header a button my-global-icon svg g[stroke="#000000"]{
   stroke: var(--whiteColor) !important;
 }
 
@@ -82,4 +131,44 @@ body {
 
 #custom-css .upload-button my-global-icon svg g[stroke="#000000"] {
   stroke: var(--whiteColor) !important;
+}
+ /* Delete buttons */
+ #custom-css .delete-me button:hover,
+ #custom-css .delete-me button,
+ #custom-css .action-button-delete,
+ #custom-css .action-button-delete:active,
+ #custom-css .action-button-delete-selection{
+   background-color: var(--dangerBackgroundColor);
+   color: var(--whiteColor);
+ }
+ #custom-css .top-buttons .delete-history{
+   background-color: var(--dangerBackgroundColor);
+   color: var(--whiteColor);
+ }
+
+ /* Icons from buttons */
+#custom-css .upload-button my-global-icon svg g[stroke="#000000"],
+#custom-css a.add-button my-global-icon svg circle[stroke="#000000"],
+#custom-css a.create-button my-global-icon svg circle[stroke="#000000"],
+#custom-css a.create-caption my-global-icon svg circle[stroke="#000000"]{
+  stroke: var(--whiteColor) !important;
+}
+#custom-css a.add-button my-global-icon svg rect[fill="#000000"],
+#custom-css a.create-button my-global-icon svg rect[fill="#000000"],
+#custom-css a.create-caption my-global-icon svg rect[fill="#000000"]{
+  fill: var(--whiteColor) !important;
+}
+  /* Trash bin icon */
+  #custom-css my-global-icon[iconname="delete"] svg path[stroke="#000000"]{
+    stroke: var(--whiteColor) !important;
+  }
+  #custom-css my-global-icon[iconname="delete"] svg path[fill="#000000"],
+  #custom-css my-global-icon[iconname="delete"] svg rect[fill="#000000"]{
+    fill: var(--whiteColor) !important;
+  }
+
+  /* Pagination */
+#custom-css .ui-paginator .ui-paginator-element:hover:not(.ui-state-disabled){
+  color: var(--whiteColor);
+  background-color: var(--mainHoverColor);
 }
