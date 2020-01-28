@@ -169,6 +169,6 @@ body {
 
   /* Pagination */
 #custom-css .ui-paginator .ui-paginator-element:hover:not(.ui-state-disabled){
-  color: var(--whiteColor);
-  background-color: var(--mainHoverColor);
+  color: var(--whiteColor) !important;
+  background-color: var(--mainHoverColor) !important;
 }
