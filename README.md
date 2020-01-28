@@ -16,8 +16,8 @@ BitTube Light Theme for PeerTube.
 
    # Example Screenshots
 
-   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-light-mode/master/public/images/screenshot1.png)
+   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-light-mode/master/public/images/screenshot01.png)
 
-   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-light-mode/master/public/images/screenshot2.png)
+   ![alt text](https://raw.githubusercontent.com/ipbc-dev/peertube-theme-bittube-light-mode/master/public/images/screenshot02.png)
 
 
