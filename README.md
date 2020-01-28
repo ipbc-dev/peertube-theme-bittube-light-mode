@@ -13,3 +13,11 @@ BitTube Light Theme for PeerTube.
     - In the searchbox below, you can type the name of the Theme to easy find it.
     - Choose your Theme and click Install (cloud icon).
     - Before see the changes, you will need to hard reload your browser.
+
+   # Example Screenshots
+
+   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-light-mode/blob/master/public/images/screenshot1.png)
+
+   ![alt text](https://github.com/ipbc-dev/peertube-theme-bittube-light-mode/blob/master/public/images/screenshot2.png)
+
+
