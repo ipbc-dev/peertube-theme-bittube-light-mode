@@ -1,6 +1,6 @@
 {
   "name": "peertube-theme-bittube-light-mode",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "BitTube light theme",
   "engine": {
     "peertube": ">=1.3.0"
@@ -21,7 +21,9 @@
   "clientScripts": [
     {
       "script": "client/common-client-plugin.js",
-      "scopes": [ "common" ]
+      "scopes": [
+        "common"
+      ]
     }
   ],
   "translations": {}
