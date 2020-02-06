@@ -18,28 +18,6 @@ body {
   background: var(--mainBackgroundColor) !important;
 }
 
-/* Top blue header */
-.topHeaderBlue {
-  position: fixed;
-  width: 100%;
-  height: 30px;
-  background: #fff;
-  z-index: 2;
-  background-color: #00ABFF;
-  z-index: 100;
-  left: 0px;
-}
-.messageTopHeader {
-  position: absolute;
-  float: left;
-  left: 27px;
-  top: 6px;
-  color: #ffffff;
-}
-.messageTopHeader a {
-  color: #ffffff8f;
-}
-
 /* Dropdowns */
 #custom-css .dropdown-menu{
   background-color: var(--menuBackgroundColor);
@@ -91,8 +69,7 @@ body {
   justify-content: space-between;
 }
 #custom-css .sub-header-container my-menu .menu-wrapper{
-  height: calc(100vh - 55px);
-  top: 52px;
+  margin-top: 2px;
 } 
 /* Icons && Icon hovers */
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
