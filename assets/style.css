@@ -123,6 +123,11 @@ body {
    color: var(--whiteColor);
  }
 
+ /* Register button */
+ #custom-css .create-account-button{
+   background-color: var(--mainForegroundColor);
+ }
+
  /* Icons from buttons */
 #custom-css .upload-button my-global-icon svg g[stroke="#000000"],
 #custom-css a.add-button my-global-icon svg circle[stroke="#000000"],
