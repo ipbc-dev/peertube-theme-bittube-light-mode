@@ -154,3 +154,9 @@ body {
   color: var(--whiteColor) !important;
   background-color: var(--mainHoverColor) !important;
 }
+
+/* 404 Not found page */
+#custom-css my-page-not-found img {
+  width: 350px !important;
+  margin-bottom: 0px !important;
+}
