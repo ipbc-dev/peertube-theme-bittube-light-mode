@@ -4,6 +4,7 @@ function register ({ registerHook, peertubeHelpers }) {
   const filterUrl = baseStaticUrl + '/images/filter_black.png';
   const keyboardUrl = baseStaticUrl + '/images/keyboard_black.png';
   const languagesUrl = baseStaticUrl + '/images/languages_black.png';
+  const backgroundUrl = baseStaticUrl + '/images/back_cube_lm.svg';
   const image404 = baseStaticUrl + '/images/404.svg'
   const style = document.createElement('style')
   document.head.appendChild(style)
@@ -22,6 +23,11 @@ function register ({ registerHook, peertubeHelpers }) {
       // Change languages icon
       rule = " #custom-css .icon.icon-shortcuts{ "
       rule+= " background-image: url('"+ keyboardUrl +"'); -webkit-filter: none; filter: none"
+      rule+= " } "
+      sheet.insertRule(rule, 0)
+      // Change background 
+      rule = " #custom-css .sub-header-container{ "
+      rule+= " background-image: url('"+ backgroundUrl +"'); -webkit-filter: none; filter: none"
       rule+= " } "
       sheet.insertRule(rule, 0)
   // STYLES END
