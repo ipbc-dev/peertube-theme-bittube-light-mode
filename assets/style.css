@@ -25,8 +25,11 @@ body {
 #custom-css #search-video{
   background: var(--mainBackgroundColor) !important;
 }
-
-/* Dropdowns */
+#custom-css .footer-links a,
+#custom-css .footer-copyleft a{
+  color: var(--menuForegroundColor) !important
+}
+/* Dropdowns & inputs */
 #custom-css .dropdown-menu{
   background-color: var(--menuBackgroundColor);
   color: var(--menuForegroundColor);
@@ -78,7 +81,10 @@ body {
 }
 #custom-css .sub-header-container my-menu .menu-wrapper{
   margin-top: 2px;
-} 
+}
+#custom-css .dropdown-item:hover .ml-auto:not(.glyphicon){
+  box-shadow: 0 0 0 0.1em var(--menuForegroundColor) !important;
+}
 /* Icons && Icon hovers */
 #custom-css  a my-global-icon svg circle[stroke="#000000"],
 #custom-css  a my-global-icon svg g[stroke="#000000"],
