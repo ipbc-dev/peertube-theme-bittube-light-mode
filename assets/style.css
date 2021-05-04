@@ -73,6 +73,9 @@ body {
 #custom-css .dropdown-menu input[type="submit"]{
   border: 1px solid transparent !important; /* Removing black border in buttons */
 }
+#custom-css .ng-select .ng-input>input{
+  border: 0 !important;
+}
 #custom-css .header .options-row{
   padding-left: 0;
 }
